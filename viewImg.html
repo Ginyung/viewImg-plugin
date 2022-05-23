@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/viewImg.css">
+    <title>viewImg3.0</title>
+    <style>
+        .content {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .content .zoom-img-box {
+            display: inline-block;
+            text-align: center;
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+
+        .content .zoom-img-box h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: black;
+            background-color: #ccc;
+            text-align: center;
+        }
+
+        .content .zoom-img-box h2 {
+            font: 24px bold black;
+            background-color: #bbb;
+            text-align: center;
+        }
+
+        .content .zoom-img-box img {
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .content img:hover {
+            transform: translate(0, -10px)
+                rotate(360deg)
+            ;
+            transition: transform 500ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="zoom-img-box">
+            <h1>盒子1</h1>
+            <img class="test" src="img/1-1600.jpg" alt="">
+            <img class="test" src="img/gg1.jpg" alt="">
+            <img class="test" src="img/gg2.jpg" alt="">
+            <img class="test" src="img/m1.jpg" alt="">
+            <img class="test" src="img/m2.jpg" alt="">
+            <img class="test" src="img/m3.jpg" alt="">
+        </div>
+        <div class="zoom-img-box">
+            <h1>盒子2</h1>
+            <div>
+                <h2>盒子2-1</h2>
+                <img class="zoom-img" src="img/gg1.jpg" alt="">
+                <img class="zoom-img" src="img/gg2.jpg" alt="">
+            </div>
+            <div>
+                <h2>盒子2-2</h2>
+                <img class="zoom-img" src="img/m1.jpg" alt="">
+                <img class="zoom-img" src="img/m2.jpg" alt="">
+                <img class="zoom-img" src="img/m3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="test"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/viewImg.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        imgView(".test",".zoom-img-box");
+        imgView(".zoom-img",".zoom-img-box");
+    </script>
+</body>
+
+</html>
