@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "805370",
+      "name": "刷新",
+      "font_class": "shuaxin",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "5667975",
+      "name": "刷新",
+      "font_class": "shuaxin1",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
       "icon_id": "614636",
       "name": "显示工具栏",
       "font_class": "xianshigongjulan",
